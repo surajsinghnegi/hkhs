@@ -787,6 +787,7 @@ footer.page-footer .footer-copyright i {
 .side-nav {
   border: none;
     background: #fff;
+    z-index: 9999999;
 }
 .side-nav a:hover {
   background: transparent;
