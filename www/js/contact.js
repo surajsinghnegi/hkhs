@@ -1,6 +1,8 @@
-window.onload=function(){
-        
-    window.onbeforeunload = function(){
-              if(window.AdMob) AdMob.showInterstitial();
-        };
-}
+var i = 0;
+$(window).on('beforeunload', function(){
+	if(i%2===0)
+	{
+   		if(window.AdMob) AdMob.showInterstitial();
+	}
+	i++;
+});

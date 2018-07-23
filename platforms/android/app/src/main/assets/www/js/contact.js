@@ -1,6 +1,3 @@
-window.onload=function(){
-        
-    window.onbeforeunload = function(){
-              if(window.AdMob) AdMob.showInterstitial();
-        };
-}
+$(window).on('beforeunload', function(){
+   if(AdMob) AdMob.showInterstitial();
+});

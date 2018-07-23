@@ -25,7 +25,12 @@ function twitterShare(){
                                                  );
   };
 
- function sharethis(){
+ function otherShare(){
    window.plugins.socialsharing.share('https://play.google.com/store/apps/details?id=com.devsun.hindikahaniya', null, null, null);
+  };
+
+ function storyShare(){
+   var data = $('.text-flow').text();
+   window.plugins.socialsharing.share('Download app \n https://play.google.com/store/apps/details?id=com.devsun.hindikahaniya \n'+data, null, null, null);
   };
 
